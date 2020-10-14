@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  before＿action :set_tweet, only: [:edit, :show]
+  before_action :set_tweet, only: [:edit, :show]
 
   def  index
     @tweets = Tweet.all
